@@ -3,11 +3,11 @@
         <title>Login Form</title>
     </head>
     <body>
-       <center><h1>Login Form</h1></center>
+       <center><h1>Login Form</h1>
        <form action="#" method="post">
             {% csrf_token %}
             {% load static %}
-        <center>
+            <!--
             <div class="container">
                 <div class="imgcontainer">
                     <img src = "{% static 'myapp/avatar_img1.jpg' %}" width="200px" alt="Avatar">
@@ -16,9 +16,10 @@
                 <input type="email" placeholder="Enter your Email" float="right" name="email" required><br>
                 <label for="password"><b>Password: </b></label>
                 <input type="password" placeholder="Enter your Password" float="right" name="password" required><br>
+            </div>
+            -->
                 <button type="submit"><b>Login</b></button>
                 <p>Don't have an account? <a href="https://localhost:8000/signup/">Sign up</a></p>
-            </div>
         </center>
        </form> 
     </body>
